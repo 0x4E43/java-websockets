@@ -10,7 +10,7 @@ const client = new Client({
     console.log("Connected to the broker");
 
     // Subscribe to the /topic/greetings topic
-    client.subscribe("/topic/greetings", (message) => {
+    client.subscribe("/topic/greetings/test", (message) => {
       console.log("Received message: " + message.body);
     });
 
