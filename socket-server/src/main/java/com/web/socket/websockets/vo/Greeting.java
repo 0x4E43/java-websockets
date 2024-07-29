@@ -2,7 +2,7 @@ package com.web.socket.websockets.vo;
 
 public class Greeting {
     private String content;
-
+    private String tenant;
     public Greeting() {
     }
 
@@ -12,5 +12,13 @@ public class Greeting {
 
     public String getContent() {
         return content;
+    }
+
+    public String getTenant() {
+        return tenant;
+    }
+
+    public void setTenant(String tenant) {
+        this.tenant = tenant;
     }
 }

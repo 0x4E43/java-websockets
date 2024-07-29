@@ -29,8 +29,7 @@ public class SocketApplication {
 
 	@PostMapping("/add")
 	public String addEvent(@RequestBody Greeting greeting) {
-		// Send the greeting message to the /topic/greetings topic
-		messagingTemplate.convertAndSend("/topic/greetings", greeting);
+		messagingTemplate.convertAndSend("/topic/greetings/"+greeting.getTenant(), greeting);
 		return "Event added";
 	}
 }
