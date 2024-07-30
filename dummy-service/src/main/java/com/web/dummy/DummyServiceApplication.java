@@ -19,7 +19,5 @@ public class DummyServiceApplication {
 	public String test(){
 		return "This end point works";
 	}
-
-
-
+	
 }
